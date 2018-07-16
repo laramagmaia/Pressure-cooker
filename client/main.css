@@ -1,4 +1,47 @@
-body {
-  padding: 10px;
-  font-family: sans-serif;
+html {
+	background-color:#f7cac9;
 }
+body {
+  padding: 0;
+  font-family: sans-serif;
+  margin:0;
+}
+.colour {
+	text-align: center;
+	color:#f7786b;
+}
+
+h1 {
+	font:Impact, Charcoal, sans-serif;
+	font-size:100px;
+}
+#site_content
+{ width: 880px;
+  overflow: hidden;
+  margin: 50px auto 0 auto;
+  padding: 0 0 10px 0;} 
+
+#nav_container
+{ float: left;
+  width: 224px;}
+
+.nav_top
+{ width: 222px;
+  height: 14px;
+  background: transparent url(side_top.png) no-repeat;}
+
+.nav_base
+{ width: 222px;
+  height: 14px;
+  background: url(side_base.png) no-repeat;}
+
+.nav
+{ float: right;
+  width: 222px;
+  padding: 0;
+  margin: 0 0 16px 0;}
+
+.nav_item
+{ background: url(side_back.png) repeat-y;
+  padding: 5px 15px;
+  width: 192px;}
