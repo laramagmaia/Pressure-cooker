@@ -1,0 +1,17 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Roaster</h1>
+    </header>
+ 
+    <ul>
+      {{#each campaigns}}
+        {{> campaign}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+ 
+<template name="campaign">
+  <li>{{text}}</li>
+</template>
