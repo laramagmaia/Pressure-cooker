@@ -21,12 +21,14 @@ body {
   margin: 0 auto;
   min-height: 100%;
   background: white;
+  display: grid; 
 }
  
 header {
   background-color: #034f84;
 /*  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
-*/  padding: 20px 15px 15px 15px;
+*/  
+  padding: 20px 15px 15px 15px;
   text-align: center;
   font-size: 100px;
   grid-template-rows: span 3;
@@ -45,24 +47,33 @@ h1 {
   text-align: center;
   color: #f778b6;
 }
+
+h2, h3{
+  font-size: 50px;
+  padding: 50px;
+  font-weight: bold;
+  margin: 5px;
+
+
+}
  
 form {
   margin-top: 10px;
   margin-bottom: -10px;
   position: relative;
 }
- 
+
 .new-task input {
   box-sizing: border-box;
   padding: 10px 0;
   background: transparent;
   border: none;
   width: 100%;
-  padding-right: 80px;
+  padding-right: 0px;
   font-size: 1em;
 }
  
-.new-task input:focus{
+.new-task input: focus{
   outline: 0;
 }
  
