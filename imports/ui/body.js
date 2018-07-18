@@ -7,7 +7,7 @@ import './index.html';
 // import './imports/ui/tasks.js';
 
 Template.body.helpers({
-  campaigns: [
+  campaigns : [
     { text: 'School Shootings', borough: 'Manhattan', category: 'children and teenagers' },
     { text: 'Street Cleaning', borough: 'Manhattan', category: 'environment' },
 	{ text: 'Scholarship Funds', borough: 'Manhattan', category: 'education'},
