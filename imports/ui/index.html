@@ -1,0 +1,47 @@
+<body>
+<div class="container campaignform" style="display:none">
+	<!-- <div class="columns large-10 large-offset-1"> -->
+		<h1 class="header">Create Your Campaign</h1>
+
+<div class="panel panel--white"><p>Want to change something in or around your borough? Is something bothering or interfering with your life in NY? Then seek the support of a wide community to propagate changes and roast the government to make this city everyday a little better. Be the character for change by completing one short form and launching your own campaign.</p><hr /><form accept-charset="UTF-8" action="/campaigns" class="new_campaign" data-abide="true" enctype="multipart/form-data" id="new_campaign" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="tGtUg7M2AlAlCxZtj5D9JadgDPYqxh0q4CmVnMzHtIU="/></div></form></div>
+
+<div class="row"><div class="columns large-12"><label for="campaign_name">Name your campaign&nbsp;<span class="has-tip" data-tooltip="" title="Short titles are better"></span></label><input id="campaign_name" name="campaign[name]" required="required" type="text" /><small class="error"></small></div></div>
+
+<div class="row"><div class="columns large-6"><label for="campaign_organization_id">Borough</label><select id="campaign_organization_id" name="campaign[organization_id]" required="required"><option value=""></option>
+<option value="6">Manhattan</option>
+<option value="3">Brooklyn</option>
+<option value="9">Queens</option>
+<option value="4">The Bronx</option>
+<option value="7">Staten Island</option></select>
+</div></div>
+
+<div class="columns large-6"><label for="campaign_category_id">Category&nbsp;<span class="has-tip" data-tooltip="" title="Ajude as pessoas encontrarem a sua mobilização"></span></label><select id="campaign_category_id" name="campaign[category_id]" required="required"><option value=""></option>
+<option value="9">Industry, Commerce and Employment</option>
+<option value="10">STEM</option>
+<option value="11">Human Rights</option>
+<option value="12">Education</option>
+<option value="14">Budget and Financing</option>
+<option value="15">Health and Drugs</option>
+<option value="16">Children and Teenagers</option>
+<option value="18">Environment</option>
+<option value="19">Civil Service</option>
+<option value="20">Transport and Traffic</option>
+<option value="22">Tourism</option>
+<option value="23">Election</option>
+<option value="25">Transparenncy and Participation</option>
+<option value="13">Sports and Recreation</option>
+<option value="26">Culture</option></select></div>
+
+<div class="row"><div class="columns large-12"><label for="campaign_description">Campaign Description&nbsp;<span class="has-tip" data-tooltip="" title="description"></span></label><textarea id="campaign_description" name="campaign[description]" required="required">
+</textarea></div></div>
+
+<div class="row"><div class="columns large-4"><label for="campaign_image">Image&nbsp;<span class="has-tip" data-tooltip="" title="Upload Image"></span></label><input id="campaign_image" name="campaign[image]" type="file" /><input id="campaign_image_cache" name="campaign[image_cache]" type="hidden" /></div></div>
+
+<div class="columns large-8" id="influencers-autocomplete"><label for="influencer_typeahead">Target(s)&nbsp;<span class="has-tip" data-tooltip="" title="Target"></span></label><input class="typeahead" type="text"/></div>
+
+<div class="columns large-12 twitter_text"><label for="campaign_text">Write the e-mail that will be sent by supporters as pressure sign, this e-mail will be sent from every supporters account and must justiy your campaign.</label><input id="campaign_text" maxlength="100" name="campaign[text]" size="100" type="text" /></div>
+<br>
+<button class="button submit">Submit</button>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>

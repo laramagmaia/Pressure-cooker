@@ -1,9 +1,13 @@
 import { Template } from 'meteor/templating';
  
 import './body.html';
- 
+
+import './index.html';
+
+// import './imports/ui/tasks.js';
+
 Template.body.helpers({
-  campaigns (): [
+  campaigns: [
     { text: 'School Shootings', borough: 'Manhattan', category: 'children and teenagers' },
     { text: 'Street Cleaning', borough: 'Manhattan', category: 'environment' },
 	{ text: 'Scholarship Funds', borough: 'Manhattan', category: 'education'},
@@ -18,3 +22,21 @@ Template.body.helpers({
 
   ],
 });
+
+Template.body.events({
+  'click .create'(event, template) {
+    // Prevent default browser form submit
+    event.preventDefault(); 
+    template.find(".campaignform").style.display = "inline";
+    template.find(".home").style.display = "none";
+    }
+});
+
+Template.body.events({
+	'click .submit'(event, template) {
+		// Prevent default browser form submit
+	event.preventDefault();
+	template.find(".campaignform").style.display = "none";
+    template.find(".home").style.display = "inline";
+	}
+})
