@@ -5,6 +5,16 @@
     <header>
       <h1>Roaster</h1>
     </header></div>
+  <div class="nav">
+    <div class="name">
+      <p> Navigation </p>
+    </div>
+    <p> Home </p>
+    <p> Create </p>
+    <p> About </p>
+    <p> Submit </p>
+    <p> Contact </p>
+  </div>
   <div class= "move">  
     <h2> Active Campaigns </h2>
     <ul>
@@ -12,24 +22,26 @@
         {{> campaign}}
       {{/each}}
     </ul>
-
-
-  </div>
-  <div class="nav">
-    <p> Navigation </p>
-    <p> Home </p>
-    <p> Create </p>
-    <p> About </p>
-    <p> Submit </p>
-    <p> Contact </p>
-  </div>
     <h3><button class="create">Create Your Own Campaign </button></h3>
 
     <input type="button" class="fancy" value="contact us">
   </div>
 
+    <!-- <h3> Create Your Own Campaign </h3> -->
+  </div>
+  <div class= "bottom">
+    <h4> Contact Us </h4>
+  </div>
+    
 </body>
  
 <template name="campaign">
-  <li>{{text}}</li>
+  {{#if imgUrl }} <img class="thumbnail" src="{{imgUrl}}"> {{/if}}
+  <li>{{text}} 
+  <br>
+   {{category}} 
+   <br> 
+   {{borough}}</li> 
+   <br>
+
 </template>

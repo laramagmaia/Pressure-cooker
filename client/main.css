@@ -22,6 +22,8 @@ body {
   min-height: 100%;
   background: #f7cac9;
   display: grid; 
+  grid-template-columns: 250px auto;
+  grid-template-rows: auto auto 50px;
 }
  
 header {
@@ -31,7 +33,7 @@ header {
   padding: 20px 15px 15px 15px;
   text-align: center;
   font-size: 100px;
-  grid-template-rows: span 3;
+  grid-column: span 2;
 }
  
 #login-buttons {
@@ -45,17 +47,28 @@ h1 {
   display: inline-block;
   margin-right: 1em;
   text-align: center;
-  color: #f778b6;
+  color: #f7786b;
 }
 
-h2, h3{
+h2 {
   font-size: 50px;
   padding: 50px;
   font-weight: bold;
   margin: 5px;
-
-
 }
+h4 {
+  font-size: 20px;
+  margin-left: 30px; 
+  grid-column: span 2; 
+  background-color: #034f84;
+  display: inline-block;
+  color: #f7786b;
+}
+.thumbnail {
+  height: 100px;
+  width: 50%;
+}
+
  
 form {
   margin-top: 10px;
@@ -77,12 +90,30 @@ form {
   outline: 0;
 }
 .move {
-  margin-left: 250px;
+  
+}
+
+.nav {
+  margin-left: 30px;
+  max-width: 200px;
+  margin-top: 50px;
+  font-size: 25px;
+
+  /*maxlength:;*/
+}
+.name {
+  font-size: 35px;
 }
 ul {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   background: #f7cac9;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  grid-template-rows: repeat (4, auto);
+  border: dotted black;
+  text-align: center;
 }
  
 .delete {
@@ -94,12 +125,12 @@ ul {
   position: relative;
 }
  
-li {
+/*li {
   position: relative;
   list-style: none;
   padding: 15px;
   border-bottom: #eee solid 1px;
-}
+}*/
  
 li .text {
   margin-left: 10px;
@@ -109,9 +140,9 @@ li.checked {
   color: #888;
 }
  
-li.checked .text {
+/*li.checked .text {
   text-decoration: line-through;
-}
+}*/
  
 li.private {
   background: #eee;
