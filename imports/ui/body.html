@@ -5,7 +5,7 @@
     <header>
       <img src="https://s15.postimg.cc/4qxh7bo3f/logo.png" width="128" height="128">
       <h1>Roaster</h1>
-    </header></div>
+    </header>
   
   <div class="nav">
     <div class="name">
@@ -43,21 +43,25 @@
       {{/each}}
     </ul>
   </div>
-    <!-- <h3> Create Your Own Campaign </h3> -->
-  </div>
-<!--   <div class= "bottom">
-    <h4> Contact Us </h4>
-  </div> -->
+</div>
+</div>
+
+
+
+
+ 
+  
+
     
 </body>
  
 <template name="campaign">
-  {{#if imgUrl }} <img class="thumbnail" src="{{imgUrl}}"> {{/if}}
-  <li>{{text}} 
+  <li> {{#if imgUrl }} <img class="thumbnail" src="{{imgUrl}}"> {{/if}}
+    <br>
+  {{text}} 
   <br>
    {{category}} 
    <br> 
    {{borough}}</li> 
-   <br>
 
 </template>
