@@ -1,11 +1,7 @@
 import { Template } from 'meteor/templating';
  
 import './body.html';
-
-import './index.html';
-
-// import './imports/ui/tasks.js';
-
+ 
 Template.body.helpers({
   campaigns : [
     { text: 'School Shootings', borough: 'Borough: Manhattan', category: 'Category: children and teenagers', imgUrl: 'http://wbbh.images.worldnow.com/images/15903124_G.jpg'},
@@ -26,16 +22,7 @@ Template.body.events({
   'click .create'(event, template) {
     // Prevent default browser form submit
     event.preventDefault(); 
-    template.find(".campaignform").style.display = "inline";
-    template.find(".home").style.display = "none";
+    template.find('h1').innerHTML = 'Create your own campaign';
+    template.find('body').innerHTML = 'Create your own campaign';
     }
 });
-
-Template.body.events({
-	'click .submit'(event, template) {
-		// Prevent default browser form submit
-	event.preventDefault();
-	template.find(".campaignform").style.display = "none";
-    template.find(".home").style.display = "inline";
-	}
-})
