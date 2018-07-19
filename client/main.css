@@ -12,9 +12,8 @@ body {
  
   padding: 0;
   margin: 0;
- 
-  font-size: 14px;
-}
+  /*font-size: 14px;*/
+} 
  
 .container {
   /*max-width: 600px;*/
@@ -51,10 +50,12 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
-  padding: 50px;
+  font-size: 35px;
+  padding: 32px;
   font-weight: bold;
-  margin: 5px;
+  margin: 5px;/*
+  text-shadow: 2px 2px #92a8d1;*/
+  text-decoration: underline #92a8d1;
 }
 h4 {
   font-size: 20px;
@@ -69,7 +70,10 @@ h4 {
   height: auto;
   margin-top: 5px;
   padding: 2px;
-
+  box-shadow: 10px 10px 30px #ff9999;
+}
+.title {
+  font-size: 20px;
 }
 
  
@@ -94,6 +98,7 @@ form {
 }
 .move {
  /* border: 1px solid black;*/
+ font-size: 35px;
 
 }
 
@@ -101,12 +106,13 @@ form {
   margin-left: 30px;
   /*max-width: 200px;*/
   /*margin-top: 50px;*/
-  font-size: 25px;
+  font-size: 35px;
 /*  border: 1px solid black;
 */  /*maxlength:;*/
 }
 .name {
   font-size: 35px;
+
 }
 ul {
   margin: 10px;
