@@ -1,6 +1,10 @@
 import { Template } from 'meteor/templating';
  
 import './body.html';
+
+import './index.html';
+
+// import './imports/ui/tasks.js';
  
 Template.body.helpers({
   campaigns : [
@@ -18,11 +22,41 @@ Template.body.helpers({
   ],
 });
 
-Template.body.events({
-  'click .create'(event, template) {
-    // Prevent default browser form submit
-    event.preventDefault(); 
-    template.find('h1').innerHTML = 'Create your own campaign';
-    template.find('body').innerHTML = 'Create your own campaign';
-    }
+Template.body.events({'click .create'(event, template) {
+   // Prevent default browser form submit
+   event.preventDefault(); 
+   template.find(".campaignform").style.display = "inline";
+   template.find(".home").style.display = "none";
+   }
 });
+
+Template.body.events({'click .submit'(event, template) {
+   template.find(".campaignform").style.display = "none";
+   template.find(".home").style.display = "inline";               // Prevent default browser form submit       event.preventDefault();       template.find(".campaignform").style.display = "none";   template.find(".home").style.display = "inline";
+      }
+})
+
+Template.body.events({'click .about'(event, template) {
+   template.find(".aboutPage").style.display= "block"; 
+   // template.find(".aboutPage").position= "absolute";              // Prevent default browser form submit       event.preventDefault();       template.find(".campaignform").style.display = "none";   template.find(".home").style.display = "inline";
+      }
+})
+
+Template.body.events({'click .close' (even, template){
+  template.find(".modal").style.display= "none";
+}
+})
+
+Template.body.events({'click .contact'(event, template) {
+   template.find(".contactUs").style.display= "block"; 
+   // template.find(".aboutPage").position= "absolute";              // Prevent default browser form submit       event.preventDefault();       template.find(".campaignform").style.display = "none";   template.find(".home").style.display = "inline";
+      }
+})
+
+Template.body.events({'click .close' (even, template){
+  template.find(".contactUs").style.display= "none";
+}
+})
+
+Template.body.events({'click .home' (even, template){}
+})

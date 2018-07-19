@@ -5,16 +5,35 @@
     <header>
       <h1>Roaster</h1>
     </header></div>
+  
   <div class="nav">
     <div class="name">
       <p> Navigation </p>
     </div>
-    <p> Home </p>
-    <p> Create </p>
-    <p> About </p>
-    <p> Submit </p>
-    <p> Contact </p>
+    <p><button class ="home fancy">Home</button></p>
+    <p><button class ="about fancy">About</button></p>
+    <p><button class="create fancy">Create Your Own Campaign </button></p>
+    <p><button class = "contact fancy">Contact Us</button></p>
   </div>
+
+<div class ="aboutPage modal" style = "display:none">
+  <!-- <div> -->
+    <button class=close>X</button>
+    <h3> About Us </h3>
+  <!-- </div> -->
+  <p>We are a non-profit organization. Our purpose is to serve and make our community a better place for the people of New York. Our work is accomplished through the communication between residents and the correct targets to propagate small changes in every single borough. Anyone can create their own campaign and launch it onto ‘Roaster’ to accumulate supporters that will pressure a body to install improvement. Allow your city’s community to ‘roast’ change!</p>
+</div>
+<div class ="contactUs modal" style = "display:none">
+  <!-- <div> -->
+    <button class=close>X</button>
+    <h3> Contact Us </h3>
+  <!-- </div> -->
+  <p>Antonio Bursic - quizoace@gmail.com</p>
+  <p>Grace Li - gli1726@bths.edu</p>
+  <p>Lara Maia - laradantas31@gmail.com</p>
+  <p class=explain>These are the creators and web developers for 'Roaster', in order to contact any of them just use the e-mails listed above and we'll try to get back to you as soon as possible.</p>
+</div>
+
   <div class= "move">  
     <h2> Active Campaigns </h2>
     <ul>
@@ -22,16 +41,12 @@
         {{> campaign}}
       {{/each}}
     </ul>
-    <h3><button class="create">Create Your Own Campaign </button></h3>
-
-    <input type="button" class="fancy" value="contact us">
   </div>
-
     <!-- <h3> Create Your Own Campaign </h3> -->
   </div>
-  <div class= "bottom">
+<!--   <div class= "bottom">
     <h4> Contact Us </h4>
-  </div>
+  </div> -->
     
 </body>
  
